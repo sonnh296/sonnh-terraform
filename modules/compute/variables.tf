@@ -1,15 +1,19 @@
+variable "ami_id" {
+  default = "ami-0fa377108253bf620"
+}
+
 variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "s_bastion_sg" {
-  
+variable "vpc_id" {
+  type = string
 }
 
-variable "s_public_subnet" {
-  
+variable "vpc_security_group_id" {
+  type = string
 }
 
-variable "key_name" {
-  
+variable "public_subnet_id" {
+  type = string
 }
